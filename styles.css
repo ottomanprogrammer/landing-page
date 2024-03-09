@@ -20,7 +20,7 @@
 
     --quotesectionbackgroundcolor: #E5E7EB;
     --quotefontsize: 36px;
-    --quotefontweight: italic;
+    --quotefontstyle: italic;
 }
 
 * {
@@ -30,7 +30,7 @@
     box-sizing: border-box;
 }
 
-.container.firstSection{
+.firstSection {
     background-color: var(--darkbackground);
     padding: 2rem;
 }
@@ -48,11 +48,16 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-wrap: wrap;
     margin: 6rem auto;
-    width: 60%;
+    width: 70%;
     gap: 5rem;
 }
 
+.hero {
+    width: 50%;
+    height: 100%;
+}
 
 ul {
     display: flex;
@@ -83,41 +88,34 @@ a {
     color: var(--headerfontcolor);
 }
 
-img {
+.firstImage img{
     width: 20rem;
     height: auto;
     border-radius: 10px;
 }
 
-.hero {
-    width: 50%;
-    height: 100%;
-}
 
-.firstImage {
-    max-width: 50%;
-}
-
-button{
+button {
     font-size: 1.5rem;
     background-color: var(--buttoncolor);
-    color:white;
+    color: white;
     padding: 8px 24px;
     margin-top: 2rem;
     border-radius: 10px;
     border: none;
-    transition:  background-color 0.5s ease;
+    transition: background-color 0.5s ease;
 }
 
-button:hover{
+button:hover {
     background-color: var(--buttonhovercolor);
 }
 
-.container.secondSection{
-    padding: 2rem;
+.secondSection {
+    padding: 3.5rem;
     text-align: center;
 }
-.randomInfo{
+
+.randomInfo {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -126,19 +124,83 @@ button:hover{
 
 }
 
-.infoElem{
+.infoElem {
     width: 200px;
     height: 150px;
 }
 
 
-.infoElem img{
+.infoElem img {
     width: 100%;
     height: 100%;
-    
     border: 0.3rem solid var(--buttoncolor);
+    border-radius: 10px;
 }
 
-.container.secondSection h1{
-    margin-bottom: 2rem;
+.secondSection h1 {
+    margin-bottom: 3.5rem;
+}
+
+.thirdSection {
+    background-color: var(--quotesectionbackgroundcolor);
+    padding: 7rem 0;
+    margin-top: 2rem;
+}
+
+.thirdSection p {
+    font-size: var(--headerfontsize);
+    color: var(--informationfontcolor);
+    font-weight: bold;
+
+}
+
+#thirdSectionInnerContainer{
+    width:60%;
+    margin: 0 auto;
+}
+
+#thirdSectionInnerContainer> :first-child {
+    font-size: var(--quotefontsize);
+    font-style: var(--quotefontstyle);
+    color: #1F2937;
+    font-weight: 100;
+}
+
+#creator {
+    text-align: end;
+    margin-top:  2rem;
+}
+
+.fourthSection{
+    padding: 7rem 0;
+}
+
+.callToAction div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--buttoncolor);
+    max-width: 70%;
+    border-radius: 10px;
+    padding: 2rem;
+    margin: 0 auto;
+    color: white;
+    gap: 5rem;
+}
+
+.callToAction button{
+    margin: 0;
+    white-space: nowrap;
+    border: 1px solid white
+}
+
+.callToAction p::first-line{
+    font-weight: bold;
+}
+
+.footer{
+    background-color: var(--darkbackground);
+    padding: 1.5rem;
+    text-align: center;
+    color:white;
 }
