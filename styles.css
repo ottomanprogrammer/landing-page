@@ -37,12 +37,12 @@
 
 .header {
     display: flex;
-    justify-content: space-between;
-    /* flex-wrap: wrap; */
+    justify-content: center;
     align-items: center;
     width: 60%;
     margin: auto;
-    gap: 2rem;
+    gap: 40%;
+    text-align: center;
 }
 
 .heroMain {
@@ -88,9 +88,11 @@ a {
     color: var(--headerfontcolor);
 }
 
+.firstImage{
+    width: 30rem;
+}
 .firstImage img{
-    width: 27rem;
-    height: auto;
+    width: 100%;
     border-radius: 10px;
 }
 
